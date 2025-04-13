@@ -53,3 +53,7 @@
 .modal button:hover {
   background-color: #1d4ed8;
 }
+body {
+  background-color: #5a5a5a;
+  color: #ffffff;
+}
