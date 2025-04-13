@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta charset="utf-8" />
+    <title>Chat!</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Mobile Specific Metas
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/skeleton.css" />
+    <link rel="stylesheet" href="styles.css" />
+
+    <!-- Favicon
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <script src="/dist/index.js" type="module" nonce="MjU1MDI0OTYwNCwzMzEyMjk1NDUy"></script>
+  </head>
+
+  <body>
+    <!-- Warning banner -->
+    <div class="warning-banner">
+      ⚠️ This chatroom is unmoderated and may contain inappropriate content.
+    </div>
+
+    <!-- Modal Disclaimer -->
+    <div class="modal-overlay" id="legal-modal">
+      <div class="modal">
+        <h2>Before You Continue</h2>
+        <p>
+          This chatroom is unmoderated and may contain content that is not suitable for all audiences.
+          By continuing, you agree that you are at least 18 years old and understand the nature of an unmoderated space.
+        </p>
+        <button onclick="document.getElementById('legal-modal').style.display = 'none'">
+          I Understand and Accept
+        </button>
+      </div>
+    </div>
+
+    <!-- Chat Layout -->
+    <div class="container" style="width: 95%; height: 100%">
+      <div class="row" style="height: 100%">
+        <div class="one-third column" style="margin-top: 25%">
+        </div>
+        <div class="two-thirds column" id="root"></div>
+      </div>
+    </div>
+
+    <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script nonce="MjU1MDI0OTYwNCwzMzEyMjk1NDUy">
+      (function () {
+        function c() {
+          var b = a.contentDocument || a.contentWindow.document;
+          if (b) {
+            var d = b.createElement("script");
+            d.nonce = "MjU1MDI0OTYwNCwzMzEyMjk1NDUy";
+            d.innerHTML =
+              "window.__CF$cv$params={r:'92f7f1d25e5c54cf',t:'MTc0NDUxNTY1My4wMDAwMDA='};var a=document.createElement('script');a.nonce='MjU1MDI0OTYwNCwzMzEyMjk1NDUy';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";
+            b.getElementsByTagName("head")[0].appendChild(d);
+          }
+        }
+        if (document.body) {
+          var a = document.createElement("iframe");
+          a.height = 1;
+          a.width = 1;
+          a.style.position = "absolute";
+          a.style.top = 0;
+          a.style.left = 0;
+          a.style.border = "none";
+          a.style.visibility = "hidden";
+          document.body.appendChild(a);
+          if ("loading" !== document.readyState) c();
+          else if (window.addEventListener)
+            document.addEventListener("DOMContentLoaded", c);
+          else {
+            var e = document.onreadystatechange || function () {};
+            document.onreadystatechange = function (b) {
+              e(b);
+              "loading" !== document.readyState &&
+                ((document.onreadystatechange = e), c());
+            };
+          }
+        }
+      })();
+    </script>
+  </body>
+</html>
